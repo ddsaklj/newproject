@@ -1,0 +1,41 @@
+h1 {
+    margin: auto;
+    width: 50%;
+    border: 3px black;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+
+}
+
+.one {
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.two {
+    font-size: 20px;
+    font-family: serif;
+}
+
+* {
+    text-align: center;
+    margin: 40px;
+    
+}
+
+.class {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        font-family: serif;
+      
+}
+
+body {
+    background-image: url("prettypicture.jpg"), url("left.jpg");
+    background-repeat: repeat-y;
+    background-position: right top, left top;
+    background-size: 80px;
+}
+

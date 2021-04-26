@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="ko">
+    <head>
+        <style>
+            h1 {
+    margin: auto;
+    width: 50%;
+    border: 3px black;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+
+}
+
+.one {
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.two {
+    font-size: 20px;
+    font-family: serif;
+}
+
+* {
+    text-align: center;
+    margin: 40px;
+    
+}
+
+.class {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        font-family: serif;
+      
+}
+
+body {
+    background-image: url("prettypicture.jpg"), url("left.jpg");
+    background-repeat: repeat-y;
+    background-position: right top, left top;
+    background-size: 80px;
+}
+        </style>
+        <meta charset="utf-8">
+        <title>나를 소개합니다.</title>
+        
+        <link rel= "stylesheet" href="{%static'css/introduce.css'%}?after"/>
+        
+    
+    </head>
+    <body>
+        
+            <h1> 하성재를 소개합니다 </h1><br><br><br><br>
+
+        
+            <li class="one">"나"에대한 간단한 소개</li><br>
+              <p class="two">안녕하세요 여러분!! 제 이름은 하성재입니다. 전 부산광역시에서 1997년 8월 21일에 태어났습니다! 가족은 저 포함 5명이고 누나 2명이 있습니다!!</p><br><br><br>
+
+
+            <li class="one"> 직업 OR 신분</li><br>
+            <table class="class">
+                <tr>
+                    <th>학교</th>
+                    <td>동국대학교</td>
+                    <img src="dongguk.jpg" alt="school picture" height=200px width=400px>
+                    
+                </tr>
+                <tr>
+                    <th>학과</th>
+                    <td>화공생물공학과</td>
+                    
+                </tr>
+                <tr>
+                    <th>학번(학년)</th>
+                    <td>2017113521 (3학년)</td>
+                    
+                </tr>
+            </table><br><br><br>
+
+
+            <li class="one"> 취미</li><br>
+              <p class="two">취미는 너무 많습니다ㅎㅎ. 하지만 그 중에서 몇가지를 뽑자면 넷플릭스 시청, 독서, 수면(ㅋㅋ)이 있겠네요. 넷플릭스는 구독한지 2년이 조금 넘어가고 있습니다ㅎㅎ(충성고객이죵ㅋㅋ). 최근에 감상한 작품은 여러가지가 있는데 그 중 가장 인상깊은 작품은 <a href= https://movie.naver.com/movie/bi/mi/basic.nhn?code=153342>"더바"</a>라고 하는 스페인 영화였습니다. 독서는 주로 비문학 책 위주로 읽고있습니다. 주로 읽는 책은 영어원서로 된 비문학 책입니다. 평소에 영어공부하는것도 좋아하고 책 읽는것도 좋아해서 어떻게 하면 이 둘을 혼합해서 수행 할 수 있을까에 대해서 고민하다가 영어로 된 책을 읽음면 되겠다는 생각이 들어 1년전부터 해오던 습관입니다. 현재 읽고있는 책은 말콤 글래드웰작가의 <a href="https://www.goodreads.com/book/show/43848929-talking-to-strangers">talking to strangers"</a>라는 책 입니다.</p><br><br><br>
+
+            <li class="one"> 장래희망</li><br>
+              <p class="two">미래에 하고 싶은 일이 뭐냐라고 묻는 다면 사실 아직 확정적으로 정한게 없다가 답인것 같습니다ㅜ.. 요번학기 제가 6전공을 듣는중이고 공부를 해 보니 따라가기 힘든것 같지는 않아 제 전공에 만족하긴 합니다만 제 가능성을 아직 이 전공으로만 좁히고 싶지는 않습니다ㅎㅎ 멋사에 지원한 이유도 사실 그 이유 때문이기도 하구요ㅎㅎ. 코딩은 미래에 지금의 엑셀같이 업무를 더 효율적으로 수행하게 해주는 도구라고 생각하기 떄문에 최선을 다해서 전공공부와 코딩공부를 할 예정입니다!!</p><br><br><br>
+            <li class="one"> 성격</li><br>
+              <p class="two">제 성격은 다소 내성적인 성격입니다. 하지만 친해지면 말이 많아지며 생각이 많은 편입니다. 독특한 사색을 즐겨 하는 편이며 신중한 성격입니다. 하지만 그렇다보니 창의성이나 도전정신이 다소 결여되는 부분이 있습니다. 이 부분을 꼭 극복 해 보고 싶습니다!!</p>
+              <img src="character.jpg.png" alt="mbti" height=300px width=400px><br><br><br>
+        
+
+        <img src="blossom.jpg" alt="blossom picture"height=250pxpx width=400px><br><br>
+
+        <form action="전송받을 대상">
+            <h3>일기장</h3>
+            제목: <input type="text" name="diarytitle">
+            
+            <label for="mood"> 기분 </label>
+            <select name="mood">
+                <option value="goodday">좋은날</option>
+                <option value="moodyday">슬픈날</option>
+                <option value="angryday">화나는날</option>
+            </select><br>
+
+            <label for="introduce">내용:</label>
+            <textarea name="introduce" id="introduce" placeholder="내용을 입력하세요." cols="30" rows="20"></textarea>
+            <input type="submit">
+            <button type="reset">리셋</button>
+        </form>
+
+        <div class="a">
+        </div>
+    
+
+
+
+
+    </body>
