@@ -1,57 +1,4 @@
-<!DOCTYPE html>
-{% load staticfiles %}
-<html lang="ko">
-    <head>
-        <style>
-            h1 {
-    margin: auto;
-    width: 50%;
-    border: 3px black;
-    padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 35px;
 
-}
-
-.one {
-    font-size: 30px;
-    font-family: monospace;
-}
-
-.two {
-    font-size: 20px;
-    font-family: serif;
-}
-
-* {
-    text-align: center;
-    margin: 40px;
-    
-}
-
-.class {
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 20px;
-        font-family: serif;
-      
-}
-
-body {
-    background-image: url("prettypicture.jpg"), url("left.jpg");
-    background-repeat: repeat-y;
-    background-position: right top, left top;
-    background-size: 80px;
-}
-        </style>
-        <meta charset="utf-8">
-        <title>나를 소개합니다.</title>
-        
-        <link rel= "stylesheet" href="{%static'css/introduce.css'%}?after"/>
-        
-    
-    </head>
-    <body>
         
             <h1> 하성재를 소개합니다 </h1><br><br><br><br>
 
@@ -63,7 +10,7 @@ body {
             <li class="one"> 직업 OR 신분</li><br>
             <table class="class">
                 <tr>
-                    <th>학교</th>
+                    <th href ="{% url 'http://www.dongguk.edu/mbs/kr/index.jsp'%}">학교</th>
                     <td>동국대학교</td>
                     <img src="dongguk.jpg" alt="school picture" height=200px width=400px>
                     
@@ -114,7 +61,8 @@ body {
         </div>
     
 
-
+    <a href ="{% url 'first' %}">first</a>
+    <a href ="{% url 'second' %}">second</a> 
 
 
     </body>

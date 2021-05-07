@@ -19,6 +19,7 @@ from main import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', main.views.index, name='mainpage'),
+    path('', views.showmain, name="mainpage"), #원래는 main.views.index였음
+    path('first/',views.first, name="first"),
     
 ]
